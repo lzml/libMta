@@ -3,7 +3,13 @@
 #
 
 # 将源代码添加到此项目的可执行文件。
-add_library (libMta  STATIC "../libMta.cpp" )
+add_library (libMta  STATIC 
+"../libMta.cpp" 
+"../libMta.h"
+"basehpp.hpp"
+"nonCopyable.h"
+"singleton.hpp"
+)
 
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
@@ -12,3 +18,7 @@ endif()
 
 # TODO: 如有需要，请添加测试并安装目标。
 install(TARGETS libMta DESTINATION bin)
+
+set_target_properties(libMta PROPERTIES
+  ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/../../${CMAKE_BUILD_TYPE}
+)

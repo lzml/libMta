@@ -1,7 +1,7 @@
 ﻿// libMta.cpp: 定义应用程序的入口点。
 //
 #pragma once
-#include "libMta.h"
+#include "../libMta.h"
 
 namespace libMta
 {

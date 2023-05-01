@@ -9,6 +9,10 @@
 *.so.*
 *.dll
 *.dylib
+/Debug
+.vs
+libmta/lib
+libmta/out
 
 # Qt-es
 object_script.*.Release
