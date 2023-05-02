@@ -9,6 +9,8 @@ add_library (libMta  STATIC
 "basehpp.hpp"
 "nonCopyable.h"
 "singleton.hpp"
+ "scopeGuard.h"
+"scopeGuard.h"
 )
 
 
